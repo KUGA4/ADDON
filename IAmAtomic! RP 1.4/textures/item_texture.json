@@ -1,0 +1,12 @@
+{
+	"resource_pack_name": "IAmAtomic!",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"atomic:atomic_sword": {
+			"textures": "textures/items/atomic_sword"
+		},
+		"atomic:shadow_robes": {
+			"textures": "textures/items/shadow_robes"
+		}
+	}
+}

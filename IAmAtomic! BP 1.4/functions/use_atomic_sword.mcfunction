@@ -1,0 +1,1 @@
+tag @p[r=1] add itemUse:ds:atomic_sword

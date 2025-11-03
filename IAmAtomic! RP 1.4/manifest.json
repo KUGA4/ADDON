@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Made by Heroic Productions | Join the discord https://discord.gg/sNKJqFp8BS",
+    "name": "§l§dI Am Atomic! | Version 1.4 | Addon RP",
+    "uuid": "8b2cff26-233b-4611-9576-117ca1784d48",
+    "version": [ 1, 4, 0 ],
+    "min_engine_version": [ 1, 21, 100 ]
+  },
+  "modules": [
+    {
+      "description": "Made by Heroic Productions | Join the discord https://discord.gg/sNKJqFp8BS",
+      "type": "resources",
+      "uuid": "9f83c8e9-8755-4f8b-88e0-7c1513175f0d",
+      "version": [ 1, 4, 0 ]
+    }
+  ]
+}

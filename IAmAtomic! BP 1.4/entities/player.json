@@ -1,0 +1,2067 @@
+//bridge-file-version: #0
+{
+	"minecraft:entity": {
+		"component_groups": {
+			"ds:parry": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"on_damage": {
+								"event": "parry",
+								"target": "self"
+							}
+						}
+					]
+				}
+			},
+			"ds:poison": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"on_damage": {
+								"event": "poison",
+								"target": "self"
+							}
+						}
+					]
+				}
+			},
+			"ds:noex_heart0": {
+				"minecraft:health": {
+					"max": 20,
+					"value": 20
+				}
+			},
+			"ds:noex_heart1": {
+				"minecraft:health": {
+					"max": 22,
+					"value": 22
+				}
+			},
+			"ds:noex_heart2": {
+				"minecraft:health": {
+					"max": 24,
+					"value": 24
+				}
+			},
+			"ds:noex_heart3": {
+				"minecraft:health": {
+					"max": 26,
+					"value": 26
+				}
+			},
+			"ds:noex_heart4": {
+				"minecraft:health": {
+					"max": 28,
+					"value": 28
+				}
+			},
+			"ds:noex_heart5": {
+				"minecraft:health": {
+					"max": 30,
+					"value": 30
+				}
+			},
+			"ds:noex_heart6": {
+				"minecraft:health": {
+					"max": 32,
+					"value": 32
+				}
+			},
+			"ds:noex_heart7": {
+				"minecraft:health": {
+					"max": 34,
+					"value": 34
+				}
+			},
+			"ds:noex_heart8": {
+				"minecraft:health": {
+					"max": 36,
+					"value": 36
+				}
+			},
+			"ds:noex_heart9": {
+				"minecraft:health": {
+					"max": 38,
+					"value": 38
+				}
+			},
+			"ds:noex_heart10": {
+				"minecraft:health": {
+					"max": 40,
+					"value": 40
+				}
+			},
+			"ds:noex_heart11": {
+				"minecraft:health": {
+					"max": 42,
+					"value": 42
+				}
+			},
+			"ds:noex_heart12": {
+				"minecraft:health": {
+					"max": 44,
+					"value": 44
+				}
+			},
+			"ds:noex_heart13": {
+				"minecraft:health": {
+					"max": 46,
+					"value": 46
+				}
+			},
+			"ds:noex_heart14": {
+				"minecraft:health": {
+					"max": 48,
+					"value": 48
+				}
+			},
+			"ds:noex_heart15": {
+				"minecraft:health": {
+					"max": 50,
+					"value": 50
+				}
+			},
+			"ds:noex_heart16": {
+				"minecraft:health": {
+					"max": 52,
+					"value": 52
+				}
+			},
+			"ds:noex_heart17": {
+				"minecraft:health": {
+					"max": 54,
+					"value": 54
+				}
+			},
+			"ds:noex_heart18": {
+				"minecraft:health": {
+					"max": 56,
+					"value": 56
+				}
+			},
+			"ds:noex_heart19": {
+				"minecraft:health": {
+					"max": 58,
+					"value": 58
+				}
+			},
+			"ds:noex_heart20": {
+				"minecraft:health": {
+					"max": 60,
+					"value": 60
+				}
+			},
+			"ds:execute": {
+				"minecraft:health": {
+					"max": 4,
+					"value": 4,
+					"min": 0
+				}
+			},
+			"ds:no_demon": {
+				"minecaft:type_family": {
+					"family": [ "player" ]
+				},
+				"minecraft:attack": {
+					"damage": 2
+				},
+				"minecraft:health": {
+					"max": 20
+				},
+				"minecraft:movement": {
+					"value": 0.1
+				}
+			},
+			"ds:demon": {
+				"minecaft:type_family": { "family": [ "zombie", "undead", "monster" ] },
+				"minecraft:attack": { "damage": 5 },
+				"minecraft:health": { "max": 40 },
+				"minecraft:movement": { "value": 0.23 }
+			},
+			"ds:sunlight": {
+				"minecraft:burns_in_daylight": {}
+			},
+			"ds:cooldown-1": {
+				"add_cooldown": [
+					{
+						"category": "blade",
+						"duration": 5
+					}
+				]
+			},
+			"bridge:default_player": {},
+			"bridge:equipped_5df085d7_c63c_4795_b077_1f78e77cca1b": {},
+			"bridge:equipped_eab3dcad_dfa7_4e40_b169_f39fcbaa3410": {},
+			"bridge:equipped_211b59fa_e11a_4773_9521_f19c022fe4a4": {},
+			"bridge:equipped_fb141386_ff79_4746_ac10_be8f25a4a886": {},
+			"bridge:equipped_insect": {},
+			"bridge:equipped_water": {},
+			"bridge:equipped_stone": {},
+			"bridge:equipped_flame": {},
+			"bridge:equipped_moon": {},
+			"bridge:equipped_akaza": {},
+			"bridge:equipped_gwind": {},
+			"bridge:equipped_gthunder": {},
+			"bridge:equipped_gflame": {},
+			"bridge:equipped_gwater": {},
+			"bridge:equipped_gstone": {},
+			"bridge:equipped_dwind": {},
+			"bridge:equipped_dthunder": {},
+			"bridge:equipped_dflame": {},
+			"bridge:equipped_dwater": {},
+			"bridge:equipped_dstone": {},
+			"bridge:equipped_black": {},
+			"bridge:equipped_light_blue": {},
+			"bridge:equipped_brown": {},
+			"bridge:equipped_crimson": {},
+			"bridge:equipped_cyan": {},
+			"bridge:equipped_light_grey": {},
+			"bridge:equipped_lime": {},
+			"bridge:equipped_orange": {},
+			"bridge:equipped_turquoise": {},
+			"bridge:equipped_white": {},
+			"bridge:equipped_yellow2": {},
+			"bridge:story_mode": {},
+			"bridge:skill_tree": {},
+			"bridge:rusty_katana": {},
+			"bridge:bomb": {},
+			"bridge:training_sword": {},
+			"bridge:equipped_indigo_nichirin_blade": {},
+			"bridge:equipped_purple_nichirin_blade": {},
+			"bridge:equipped_indigo_nichirin_naginata": {},
+			"bridge:equipped_purple_nichirin_naginata": {},
+			"bridge:equipped_indigo_sound_greatsword": {},
+			"bridge:equipped_purple_sound_greatsword": {},
+			"bridge:equipped_indigo_nichirin_knuckles": {},
+			"bridge:equipped_purple_nichirin_knuckles": {},
+			"bridge:equipped_indigo_nichirin_scythe": {},
+			"bridge:equipped_purple_nichirin_scythe": {},
+			"bridge:equipped_red_nichirin_knuckles": {},
+			"minecraft:add_bad_omen": {
+				"minecraft:spell_effects": {
+					"add_effects": [
+						{
+							"effect": "bad_omen",
+							"duration": 6000,
+							"display_on_screen_animation": true
+						}
+					]
+				},
+				"minecraft:timer": {
+					"time": [
+						0,
+						0
+					],
+					"looping": false,
+					"time_down_event": {
+						"event": "minecraft:clear_add_bad_omen",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:clear_bad_omen_spell_effect": {
+				"minecraft:spell_effects": {}
+			},
+			"ds:0.5scale": {
+				"minecraft:scale": {
+					"value": 1.5
+				}
+			},
+			"ds:0scale": {
+				"minecraft:scale": {
+					"value": 1
+				}
+			},
+			"minecraft:raid_trigger": {
+				"minecraft:raid_trigger": {
+					"triggered_event": {
+						"event": "minecraft:remove_raid_trigger",
+						"target": "self"
+					}
+				},
+				"minecraft:spell_effects": {
+					"remove_effects": "bad_omen"
+				}
+			}
+		},
+		"events": {
+			"ds:sheath": {
+				"run_command": {
+					"command": [
+						"playanimation @s animation.armor_stand.riposte_pose f 4"
+					]
+				}
+			},
+			"ds:parry": {
+				"add": {
+					"component_groups": [
+						"ds:parry"
+					]
+				}
+			},
+			"parry": {
+				"run_command": {
+					"command": [
+						"function core/fightingstyles/parry"
+					]
+				}
+			},
+			"ds:no_parry": {
+				"remove": {
+					"component_groups": [
+						"ds:parry"
+					]
+				}
+			},
+			"ds:poison": {
+				"add": {
+					"component_groups": [
+						"ds:poison"
+					]
+				}
+			},
+			"poison": {
+				"run_command": {
+					"command": [
+						"function core/family/poison"
+					]
+				}
+			},
+			"ds:no_poison": {
+				"remove": {
+					"component_groups": [
+						"ds:poison"
+					]
+				}
+			},
+			"ds:cooldown-1": {
+				"add": {
+					"component_groups": [
+						"ds:cooldown-1"
+					]
+				}
+			},
+			"ds:execute": {
+				"add": {
+					"component_groups": [
+						"ds:execute"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart15",
+						"ds:noex_heart16",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20"
+					]
+				}
+			},
+			"ds:noex_heart1": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart1"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart15",
+						"ds:noex_heart16",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+					]
+				}
+			},
+			"ds:noex_heart2": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart2"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart15",
+						"ds:noex_heart16",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart3": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart3"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart15",
+						"ds:noex_heart16",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart4": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart4"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart15",
+						"ds:noex_heart16",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart5": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart5"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart15",
+						"ds:noex_heart16",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart6": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart6"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart15",
+						"ds:noex_heart16",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart7": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart7"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart15",
+						"ds:noex_heart16",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart8": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart8"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart15",
+						"ds:noex_heart16",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart9": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart9"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart15",
+						"ds:noex_heart16",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart10": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart10"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart15",
+						"ds:noex_heart16",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart11": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart11"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart15",
+						"ds:noex_heart16",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart12": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart12"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart15",
+						"ds:noex_heart16",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart13": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart13"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart14",
+						"ds:noex_heart15",
+						"ds:noex_heart16",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart14": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart14"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart15",
+						"ds:noex_heart16",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart15": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart15"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart16",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart16": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart16"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart15",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart17": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart17"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart16",
+						"ds:noex_heart15",
+						"ds:noex_heart18",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart18": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart18"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart16",
+						"ds:noex_heart15",
+						"ds:noex_heart17",
+						"ds:noex_heart19",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart19": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart19"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart16",
+						"ds:noex_heart15",
+						"ds:noex_heart17",
+						"ds:noex_heart18",
+						"ds:noex_heart20",
+						"ds:execute"
+
+					]
+				}
+			},
+			"ds:noex_heart20": {
+				"add": {
+					"component_groups": [
+						"ds:noex_heart20"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ds:noex_heart1",
+						"ds:noex_heart2",
+						"ds:noex_heart3",
+						"ds:noex_heart4",
+						"ds:noex_heart5",
+						"ds:noex_heart6",
+						"ds:noex_heart7",
+						"ds:noex_heart8",
+						"ds:noex_heart9",
+						"ds:noex_heart10",
+						"ds:noex_heart11",
+						"ds:noex_heart12",
+						"ds:noex_heart13",
+						"ds:noex_heart14",
+						"ds:noex_heart16",
+						"ds:noex_heart15",
+						"ds:noex_heart17",
+						"ds:noex_heart19",
+						"ds:noex_heart18",
+						"ds:execute"
+
+					]
+				}
+			},
+			"bridge:on_reset_player": {
+				"add": {
+					"component_groups": [
+						"bridge:default_player",
+						"bridge:default_player",
+						"bridge:default_player"
+					]
+				}
+			},
+			"bridge:on_equipped_5df085d7_c63c_4795_b077_1f78e77cca1b": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_5df085d7_c63c_4795_b077_1f78e77cca1b"
+					]
+				}
+			},
+			"bridge:on_unequipped_5df085d7_c63c_4795_b077_1f78e77cca1b": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_5df085d7_c63c_4795_b077_1f78e77cca1b"
+					]
+				}
+			},
+			"bridge:on_equipped_eab3dcad_dfa7_4e40_b169_f39fcbaa3410": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_eab3dcad_dfa7_4e40_b169_f39fcbaa3410"
+					]
+				}
+			},
+			"bridge:on_unequipped_eab3dcad_dfa7_4e40_b169_f39fcbaa3410": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_eab3dcad_dfa7_4e40_b169_f39fcbaa3410"
+					]
+				}
+			},
+			"bridge:on_equipped_211b59fa_e11a_4773_9521_f19c022fe4a4": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_211b59fa_e11a_4773_9521_f19c022fe4a4"
+					]
+				}
+			},
+			"bridge:on_unequipped_211b59fa_e11a_4773_9521_f19c022fe4a4": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_211b59fa_e11a_4773_9521_f19c022fe4a4"
+					]
+				}
+			},
+			"bridge:on_equipped_fb141386_ff79_4746_ac10_be8f25a4a886": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_fb141386_ff79_4746_ac10_be8f25a4a886"
+					]
+				}
+			},
+			"bridge:on_unequipped_fb141386_ff79_4746_ac10_be8f25a4a886": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_fb141386_ff79_4746_ac10_be8f25a4a886"
+					]
+				}
+			},
+			"ds:0scale": {
+				"add": {
+					"component_groups": [
+						"ds:0scale"
+					]
+				}
+			},
+			"ds:1heart": {
+				"add": {
+					"component_groups": [
+						"ds:1heart"
+					]
+				}
+			},
+			"ds:0heart": {
+				"add": {
+					"component_groups": [
+						"ds:0heart"
+					]
+				}
+			},
+			"ds:2heart": {
+				"add": {
+					"component_groups": [
+						"ds:2heart"
+					]
+				}
+			},
+			"ds:3heart": {
+				"add": {
+					"component_groups": [
+						"ds:3heart"
+					]
+				}
+			},
+			"ds:4heart": {
+				"add": {
+					"component_groups": [
+						"ds:4heart"
+					]
+				}
+			},
+			"ds:5heart": {
+				"add": {
+					"component_groups": [
+						"ds:5heart"
+					]
+				}
+			},
+			"ds:0.5scale": {
+				"add": {
+					"component_groups": [
+						"ds:0.5scale"
+					]
+				}
+			},
+			"ds:sunlight": {
+				"add": {
+					"component_groups": [
+						"ds:sunlight"
+					]
+				}
+			},
+			"ds:no_sunlight": {
+				"remove": {
+					"component_groups": [
+						"ds:sunlight"
+					]
+				}
+			},
+			"ds:demon": {
+				"remove": {
+					"component_groups": [
+						"ds:no_demon"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"ds:demon"
+					]
+				}
+			},
+			"bridge:on_equipped_skill_tree": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_skill_tree"
+					]
+				}
+			},
+			"bridge:on_unequipped_skill_tree": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_skill_tree"
+					]
+				}
+			},
+			"ds:no_demon": {
+				"remove": {
+					"component_groups": [
+						"ds:demon"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"ds:no_demon"
+					]
+				}
+			},
+			"bridge:on_equipped_training_sword": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_training_sword"
+					]
+				}
+			},
+			"bridge:on_unequipped_training_sword": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_training_sword"
+					]
+				}
+			},
+			"bridge:on_equipped_rusty_katana": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_rusty_katana"
+					]
+				}
+			},
+			"bridge:on_unequipped_rusty_katana": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_rusty_katana"
+					]
+				}
+			},
+			"bridge:on_equipped_bomb": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_bomb"
+					]
+				}
+			},
+			"bridge:on_unequipped_bomb": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_bomb"
+					]
+				}
+			},
+			"bridge:on_equipped_red_nichirin_knuckles": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_red_nichirin_knuckles"
+					]
+				}
+			},
+			"bridge:on_unequipped_red_nichirin_knuckles": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_red_nichirin_knuckles"
+					]
+				}
+			},
+			"bridge:on_equipped_indigo_nichirin_blade": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_indigo_nichirin_blade"
+					]
+				}
+			},
+			"bridge:on_unequipped_indigo_nichirin_blade": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_indigo_nichirin_blade"
+					]
+				}
+			},
+			"bridge:on_equipped_purple_nichirin_blade": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_purple_nichirin_blade"
+					]
+				}
+			},
+			"bridge:on_unequipped_purple_nichirin_blade": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_purple_nichirin_blade"
+					]
+				}
+			},
+			"bridge:on_equipped_indigo_nichirin_scythe": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_indigo_nichirin_scythe"
+					]
+				}
+			},
+			"bridge:on_unequipped_indigo_nichirin_scythe": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_indigo_nichirin_scythe"
+					]
+				}
+			},
+			"bridge:on_equipped_purple_nichirin_scythe": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_purple_nichirin_scythe"
+					]
+				}
+			},
+			"bridge:on_unequipped_purple_nichirin_scythe": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_purple_nichirin_scythe"
+					]
+				}
+			},
+			"bridge:on_equipped_indigo_sound_greatsword": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_indigo_sound_greatsword"
+					]
+				}
+			},
+			"bridge:on_unequipped_indigo_sound_greatsword": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_indigo_sound_greatsword"
+					]
+				}
+			},
+			"bridge:on_equipped_purple_sound_greatsword": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_purple_sound_greatsword"
+					]
+				}
+			},
+			"bridge:on_unequipped_purple_sound_greatsword": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_purple_sound_greatsword"
+					]
+				}
+			},
+			"bridge:on_equipped_indigo_nichirin_blade": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_indigo_nichirin_blade"
+					]
+				}
+			},
+			"bridge:on_unequipped_indigo_nichirin_naginata": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_indigo_nichirin_naginata"
+					]
+				}
+			},
+			"bridge:on_equipped_purple_nichirin_naginata": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_purple_nichirin_naginata"
+					]
+				}
+			},
+			"bridge:on_unequipped_purple_nichirin_naginata": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_purple_nichirin_naginata"
+					]
+				}
+			},
+			"bridge:on_equipped_indigo_nichirin_knuckles": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_indigo_nichirin_knuckles"
+					]
+				}
+			},
+			"bridge:on_unequipped_indigo_nichirin_knuckles": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_indigo_nichirin_knuckles"
+					]
+				}
+			},
+			"bridge:on_equipped_purple_nichirin_knuckles": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_purple_nichirin_knuckles"
+					]
+				}
+			},
+			"bridge:on_unequipped_purple_nichirin_knuckles": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_purple_nichirin_knuckles"
+					]
+				}
+			},
+			"bridge:on_equipped_black": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_black"
+					]
+				}
+			},
+			"bridge:on_unequipped_black": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_black"
+					]
+				}
+			},
+			"bridge:on_equipped_light_blue": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_light_blue"
+					]
+				}
+			},
+			"bridge:on_unequipped_light_blue": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_light_blue"
+					]
+				}
+			},
+			"bridge:on_equipped_brown": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_brown"
+					]
+				}
+			},
+			"bridge:on_unequipped_brown": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_brown"
+					]
+				}
+			},
+			"bridge:on_equipped_crimson": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_crimson"
+					]
+				}
+			},
+			"bridge:on_unequipped_crimson": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_crimson"
+					]
+				}
+			},
+			"bridge:on_equipped_cyan": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_cyan"
+					]
+				}
+			},
+			"bridge:on_unequipped_cyan": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_cyan"
+					]
+				}
+			},
+			"bridge:on_equipped_light_grey": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_light_grey"
+					]
+				}
+			},
+			"bridge:on_unequipped_light_grey": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_light_grey"
+					]
+				}
+			},
+			"bridge:on_equipped_lime": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_lime"
+					]
+				}
+			},
+			"bridge:on_unequipped_lime": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_lime"
+					]
+				}
+			},
+			"bridge:on_equipped_orange": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_orange"
+					]
+				}
+			},
+			"bridge:on_unequipped_orange": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_orange"
+					]
+				}
+			},
+			"bridge:on_equipped_turquoise": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_turquoise"
+					]
+				}
+			},
+			"bridge:on_unequipped_turquoise": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_turquoise"
+					]
+				}
+			},
+			"bridge:on_equipped_white": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_white"
+					]
+				}
+			},
+			"bridge:on_unequipped_white": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_white"
+					]
+				}
+			},
+			"bridge:on_equipped_yello2": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_yellow2"
+					]
+				}
+			},
+			"bridge:on_unequipped_yellow2": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_yellow2"
+					]
+				}
+			},
+			"bridge:on_equipped_gwind": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_gwind"
+					]
+				}
+			},
+			"bridge:on_unequipped_gwind": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_gwind"
+					]
+				}
+			},
+			"bridge:on_equipped_dwind": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_dwind"
+					]
+				}
+			},
+			"bridge:on_unequipped_dwind": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_dwind"
+					]
+				}
+			},
+			"bridge:on_equipped_dthunder": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_dthunder"
+					]
+				}
+			},
+			"bridge:on_unequipped_dthunder": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_dthunder"
+					]
+				}
+			},
+			"bridge:on_equipped_dflame": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_dflame"
+					]
+				}
+			},
+			"bridge:on_unequipped_dflame": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_dflame"
+					]
+				}
+			},
+			"bridge:on_equipped_dwater": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_dwater"
+					]
+				}
+			},
+			"bridge:on_unequipped_dwater": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_dwater"
+					]
+				}
+			},
+			"bridge:on_equipped_dstone": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_dstone"
+					]
+				}
+			},
+			"bridge:on_unequipped_dstone": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_dstone"
+					]
+				}
+			},
+			"bridge:on_equipped_thunder": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_gthunder"
+					]
+				}
+			},
+			"bridge:on_unequipped_gthunder": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_gthunder"
+					]
+				}
+			},
+			"bridge:on_equipped_gflame": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_gflame"
+					]
+				}
+			},
+			"bridge:on_unequipped_gflame": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_gflame"
+					]
+				}
+			},
+			"bridge:on_equipped_gwater": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_gwater"
+					]
+				}
+			},
+			"bridge:on_unequipped_gwater": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_gwater"
+					]
+				}
+			},
+			"bridge:on_equipped_gstone": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_gstone"
+					]
+				}
+			},
+			"bridge:on_unequipped_gstone": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_gstone"
+					]
+				}
+			},
+			"bridge:on_equipped_insect": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_insect"
+					]
+				}
+			},
+			"bridge:on_unequipped_insect": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_insect"
+					]
+				}
+			},
+			"bridge:on_equipped_story": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_story"
+					]
+				}
+			},
+			"bridge:on_unequipped_story": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_story"
+					]
+				}
+			},
+			"bridge:on_equipped_akaza": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_akaza"
+					]
+				}
+			},
+			"bridge:on_unequipped_akaza": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_akaza"
+					]
+				}
+			},
+			"bridge:on_equipped_water": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_water"
+					]
+				}
+			},
+			"bridge:on_unequipped_water": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_water"
+					]
+				}
+			},
+			"bridge:on_equipped_stone": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_stone"
+					]
+				}
+			},
+			"bridge:on_unequipped_stone": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_stone"
+					]
+				}
+			},
+			"bridge:on_equipped_flame": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_flame"
+					]
+				}
+			},
+			"bridge:on_unequipped_flame": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_flame"
+					]
+				}
+			},
+			"bridge:on_equipped_moon": {
+				"add": {
+					"component_groups": [
+						"bridge:equipped_moon"
+					]
+				}
+			},
+			"bridge:on_unequipped_moon": {
+				"remove": {
+					"component_groups": [
+						"bridge:equipped_moon"
+					]
+				}
+			},
+			"minecraft:gain_bad_omen": {
+				"add": {
+					"component_groups": [
+						"minecraft:add_bad_omen"
+					]
+				}
+			},
+			"minecraft:clear_add_bad_omen": {
+				"remove": {
+					"component_groups": [
+						"minecraft:add_bad_omen"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:clear_bad_omen_spell_effect"
+					]
+				}
+			},
+			"minecraft:trigger_raid": {
+				"add": {
+					"component_groups": [
+						"minecraft:raid_trigger"
+					]
+				}
+			},
+			"minecraft:remove_raid_trigger": {
+				"remove": {
+					"component_groups": [
+						"minecraft:raid_trigger"
+					]
+				}
+			}
+		},
+		"description": {
+			"animations": {
+				"nichirin_blade": "controller.animation.nichirin_blade_hold",
+				"scythe": "controller.animation.scythe_hold",
+				"black_scythe": "controller.animation.black_scythe_hold",
+				"light_blue_scythe": "controller.animation.light_blue_scythe_hold",
+				"brown_scythe": "controller.animation.brown_scythe_hold",
+				"crimson_scythe": "controller.animation.crimson_scythe_hold",
+				"cyan_scythe": "controller.animation.cyan_scythe_hold",
+				"light_grey_scythe": "controller.animation.light_grey_scythe_hold",
+				"lime_scythe": "controller.animation.lime_scythe_hold",
+				"orange_scythe": "controller.animation.orange_scythe_hold",
+				"purple_scythe": "controller.animation.purple_scythe_hold",
+				"turquoise_scythe": "controller.animation.turquoise_scythe_hold",
+				"white_scythe": "controller.animation.white_scythe_hold",
+				"yellow_scythe": "controller.animation.yellow_scythe_hold",
+				"bridge_custom_item_behavior": "controller.animation.bridge_custom_item_behavior",
+				"bridge_custom_item_offhand": "controller.animation.bridge_custom_item_offhand",
+				"start": "animation.start",
+				"main": "animation.main",
+				"left": "controller.animation.left",
+				"right": "controller.animation.right",
+				"jump": "controller.animation.jump",
+				"sneak": "controller.animation.sneak",
+				"sprint": "controller.animation.sprint",
+				"sleep": "controller.animation.sleep",
+				"swim": "controller.animation.swim",
+				"stand": "controller.animation.stand",
+				"climb": "controller.animation.climb",
+				"charged": "controller.animation.charged",
+				"helmet": "controller.animation.helmet",
+				"chest": "controller.animation.chest",
+				"leggings": "controller.animation.leggings",
+				"boots": "controller.animation.boots",
+				"rby": "controller.animation.rby",
+				"rhx": "controller.animation.rhx",
+				"rhy": "controller.animation.rhy",
+				"breath": "controller.animation.breath",
+				"cast": "controller.animation.cast",
+				"charge": "controller.animation.charge",
+				"dance": "controller.animation.dance",
+				"emote": "controller.animation.emote",
+				"fimmune": "controller.animation.fimmune",
+				"first": "controller.animation.first",
+				"ghost": "controller.animation.ghost",
+				"glide": "controller.animation.glide",
+				"graze": "controller.animation.graze",
+				"ignited": "controller.animation.ignited",
+				"water": "controller.animation.water",
+				"rain": "controller.animation.rain",
+				"invisible": "controller.animation.invisible",
+				"equip": "controller.animation.equip",
+				"sequip": "controller.animation.sequip",
+				"levitate": "controller.animation.levitate",
+				"linger": "controller.animation.linger",
+				"fire": "controller.animation.fire",
+				"ground": "controller.animation.ground",
+				"ride": "controller.animation.ride",
+				"health": "controller.animation.health",
+				"level": "controller.animation.level",
+				"idle": "controller.animation.idle",
+				"moving": "controller.animation.moving"
+			},
+			"scripts": {
+				"animate": [
+					"nichirin_blade",
+					"scythe",
+					"black_scythe",
+					"light_blue_scythe",
+					"brown_scythe",
+					"crimson_scythe",
+					"cyan_scythe",
+					"light_grey_scythe",
+					"lime_scythe",
+					"orange_scythe",
+					"purple_scythe",
+					"turquoise_scythe",
+					"white_scythe",
+					"yellow_scythe",
+					"start",
+					"main",
+					"left",
+					"right",
+					"jump",
+					"sneak",
+					"sprint",
+					"sleep",
+					"swim",
+					"stand",
+					"climb",
+					"charged",
+					"alive",
+					"helmet",
+					"chest",
+					"leggings",
+					"boots",
+					"rby",
+					"rhx",
+					"rhy",
+					"breath",
+					"cast",
+					"charge",
+					"dance",
+					"emote",
+					"fimmune",
+					"first",
+					"ghost",
+					"glide",
+					"graze",
+					"ignited",
+					"water",
+					"rain",
+					"invisible",
+					"equip",
+					"sequip",
+					"levitate",
+					"linger",
+					"fire",
+					"ground",
+					"ride",
+					"health",
+					"level",
+					"moving",
+					"idle",
+					"bridge_custom_item_behavior",
+					"bridge_custom_item_offhand"
+				]
+			},
+			"identifier": "minecraft:player",
+			"is_spawnable": false,
+			"is_summonable": false,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:experience_reward": {
+				"on_death": "Math.Min(query.player_level * 7, 100)"
+			},
+			"minecraft:type_family": {
+				"family": [
+					"player"
+				]
+			},
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:loot": {
+				"table": "loot_tables/empty.json"
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.8
+			},
+			"minecraft:can_climb": {},
+			"minecraft:movement": {
+				"value": 0.1
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:attack": {
+				"damage": 1
+			},
+			"minecraft:player.saturation": {
+				"value": 20
+			},
+			"minecraft:player.exhaustion": {
+				"value": 0,
+				"max": 4
+			},
+			"minecraft:player.level": {
+				"value": 0,
+				"max": 24791
+			},
+			"minecraft:player.experience": {
+				"value": 0,
+				"max": 1
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": -1,
+				"inhale_time": 3.75,
+				"generates_bubbles": false
+			},
+			"minecraft:nameable": {
+				"always_show": true,
+				"allow_name_tag_renaming": false
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:insomnia": {
+				"days_until_insomnia": 3
+			},
+			"minecraft:rideable": {
+				"seat_count": 2,
+				"family_types": [
+					"parrot_tame"
+				],
+				"pull_in_entities": true,
+				"seats": [
+					{
+						"position": [
+							0.4,
+							-0.2,
+							-0.1
+						],
+						"min_rider_count": 0,
+						"max_rider_count": 0,
+						"lock_rider_rotation": 0
+					},
+					{
+						"position": [
+							-0.4,
+							-0.2,
+							-0.1
+						],
+						"min_rider_count": 1,
+						"max_rider_count": 2,
+						"lock_rider_rotation": 0
+					}
+				]
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:scaffolding_climber": {},
+			"minecraft:environment_sensor": {
+				"triggers": {
+					"filters": {
+						"all_of": [
+							{
+								"test": "has_mob_effect",
+								"subject": "self",
+								"value": "bad_omen"
+							},
+							{
+								"test": "is_in_village",
+								"subject": "self",
+								"value": true
+							}
+						]
+					},
+					"event": "minecraft:trigger_raid"
+				}
+			}
+		}
+	},
+	"format_version": "1.21.0"
+}

@@ -1,0 +1,47 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ds:shadow_robes",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "atomic:shadow_robes"
+      },
+      "minecraft:display_name": {},
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.chestplate"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:enchantable": {
+        "slot": "armor_torso",
+        "value": 10
+      },
+      "minecraft:durability": {
+        "max_durability": 7600,
+        "minecraft:damage_chance": {
+          "min": 60,
+          "max": 100
+        }
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "obsidian"
+            ],
+            "repair_amount": 500
+          }
+        ]
+      },
+      "minecraft:mining_speed": 8,
+      "minecraft:wearable": {
+        "slot": "slot.armor.chest"
+      },
+      "minecraft:armor": {
+        "protection": 20
+      }
+    }
+  }
+}

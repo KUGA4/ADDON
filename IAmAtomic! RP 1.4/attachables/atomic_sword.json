@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "ds:atomic_sword",
+      "materials": {
+        "default": "armor",
+        "enchanted": "armor_enchanted"
+      },
+      "textures": {
+        "default": "textures/models/atomic_sword",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.atomic_sword"
+      },
+      "scripts": {
+        "parent_setup": "variable.boot_layer_visible = 0.0;"
+      },
+      "render_controllers": [ "controller.render.armor" ]
+    }
+  }
+}

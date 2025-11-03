@@ -1,0 +1,241 @@
+{
+  "format_version": "1.21.0",
+  "animation_controllers": {
+    "controller.animation.left": {
+      "states": {
+        "default": {
+          "transitions": [ {"left": "variable.attack_time"} ],
+          "on_entry": [ "/scoreboard players set @s detect_left 0" ]
+        },
+        "left": {
+          "transitions": [ {"default": "!variable.attack_time"} ],
+          "on_entry": [ "/scoreboard players set @s detect_left 1" ]
+        }
+      }
+    },
+    "controller.animation.right": {
+      "states": {
+        "default": {
+          "transitions": [ {"right": "query.is_using_item"} ],
+          "on_entry": [ "/scoreboard players set @s detect_right 0" ]
+        },
+        "right": {
+          "transitions": [ {"default": "!query.is_using_item"} ],
+          "on_entry": [ "/scoreboard players set @s detect_right 1" ]
+        }
+      }
+    },
+    "controller.animation.jump": {
+      "states": {
+        "default": {
+          "transitions": [ {"jump": "query.is_jumping"} ],
+          "on_entry": [ "/scoreboard players set @s detect_jump 0" ]
+        },
+        "jump": {
+          "transitions": [ {"default": "!query.is_jumping"} ],
+          "on_entry": [ "/scoreboard players set @s detect_jump 1" ]
+        }
+      }
+    },
+    "controller.animation.sneak": {
+      "states": {
+        "default": {
+          "transitions": [ {"sneak": "query.is_sneaking"} ],
+          "on_entry": [ "/scoreboard players set @s detect_sneak 0", "/scoreboard players set @s detect_dsneak 0" ]
+        },
+        "sneak": {
+          "transitions": [ {"default": "!query.is_sneaking"} ],
+          "on_entry": [ "/scoreboard players set @s detect_sneak 1", "/function detect_dsneak" ]
+        }
+      }
+    },
+    "controller.animation.sprint": {
+      "states": {
+        "default": {
+          "transitions": [ {"sprint": "query.is_sprinting"} ],
+          "on_entry": [ "/scoreboard players set @s detect_sprint 0" ]
+        },
+        "sprint": {
+          "transitions": [ {"default": "!query.is_sprinting"} ],
+          "on_entry": [ "/scoreboard players set @s detect_sprint 1" ]
+        }
+      }
+    },
+    "controller.animation.moving": {
+      "states": {
+        "default": {
+          "transitions": [ {"moving": "query.is_moving"} ],
+          "on_entry": [ "/scoreboard players set @s detect_move 0" ]
+        },
+        "moving": {
+          "transitions": [ {"default": "!query.is_moving"} ],
+          "on_entry": [ "/scoreboard players set @s detect_move 1" ]
+        }
+      }
+    },
+    "controller.animation.swim": {
+      "states": {
+        "default": {
+          "transitions": [ {"swim": "query.is_swimming"} ],
+          "on_entry": [ "/scoreboard players set @s detect_swim 0" ]
+        },
+        "swim": {
+          "transitions": [ {"default": "!query.is_swimming"} ],
+          "on_entry": [ "/scoreboard players set @s detect_swim 1" ]
+        }
+      }
+    },
+    "controller.animation.idle": {
+      "states": {
+        "default": {
+          "transitions": [ {"idle": "query.is_idling"} ],
+          "on_entry": [ "/scoreboard players set @s detect_idle 0" ]
+        },
+        "idle": {
+          "transitions": [ {"default": "!query.is_idling"} ],
+          "on_entry": [ "/scoreboard players set @s detect_idle 1" ]
+        }
+      }
+    },
+    "controller.animation.climb": {
+      "states": {
+        "default": {
+          "transitions": [ {"climb": "query.is_wall_climbing"} ],
+          "on_entry": [ "/scoreboard players set @s detect_climb 0" ]
+        },
+        "climb": {
+          "transitions": [ {"default": "!query.is_wall_climbing"} ],
+          "on_entry": [ "/scoreboard players set @s detect_climb 1" ]
+        }
+      }
+    },
+    "controller.animation.charged": {
+      "states": {
+        "default": {
+          "transitions": [ {"charged": "query.is_charged"} ],
+          "on_entry": [ "/scoreboard players set @s detect_charged 0" ]
+        },
+        "charged": {
+          "transitions": [ {"default": "!query.is_charged"} ],
+          "on_entry": [ "/scoreboard players set @s detect_charged 1" ]
+        }
+      }
+    },
+    "controller.animation.helmet": {
+      "states": {
+        "default": {
+          "transitions": [
+            {"noh": "!(query.has_armor_slot(0))"},
+            {"leatherh": "query.armor_texture_slot(0) == 0"},
+            {"chainh": "query.armor_texture_slot(0) == 1"},
+            {"ironh": "query.armor_texture_slot(0) == 2"},
+            {"diamondh": "query.armor_texture_slot(0) == 3"},
+            {"goldh": "query.armor_texture_slot(0) == 4"},
+            {"netheriteh": "query.armor_texture_slot(0) == 5"}
+          ]
+        },
+        "noh": {
+          "transitions": [
+            {"leatherh": "query.armor_texture_slot(0) == 0"},
+            {"chainh": "query.armor_texture_slot(0) == 1"},
+            {"ironh": "query.armor_texture_slot(0) == 2"},
+            {"diamondh": "query.armor_texture_slot(0) == 3"},
+            {"goldh": "query.armor_texture_slot(0) == 4"},
+            {"netheriteh": "query.armor_texture_slot(0) == 5"}
+          ],
+          "on_entry": [ "/scoreboard players set @s detect_helmet 0" ]
+        },
+        "leatherh": {
+          "transitions": [
+            {"noh": "!(query.has_armor_slot(0))"},
+            {"chainh": "query.armor_texture_slot(0) == 1"},
+            {"ironh": "query.armor_texture_slot(0) == 2"},
+            {"diamondh": "query.armor_texture_slot(0) == 3"},
+            {"goldh": "query.armor_texture_slot(0) == 4"},
+            {"netheriteh": "query.armor_texture_slot(0) == 5"}
+          ],
+          "on_entry": [ "/scoreboard players set @s detect_helmet 1" ]
+        },
+        "chainh": {
+          "transitions": [
+            {"noh": "!(query.has_armor_slot(0))"},
+            {"leatherh": "query.armor_texture_slot(0) == 0"},
+            {"ironh": "query.armor_texture_slot(0) == 2"},
+            {"diamondh": "query.armor_texture_slot(0) == 3"},
+            {"goldh": "query.armor_texture_slot(0) == 4"},
+            {"netheriteh": "query.armor_texture_slot(0) == 5"}
+          ],
+          "on_entry": [ "/scoreboard players set @s detect_helmet 2" ]
+        },
+        "ironh": {
+          "transitions": [
+            {"noh": "!(query.has_armor_slot(0))"},
+            {"leatherh": "query.armor_texture_slot(0) == 0"},
+            {"chainh": "query.armor_texture_slot(0) == 1"},
+            {"diamondh": "query.armor_texture_slot(0) == 3"},
+            {"goldh": "query.armor_texture_slot(0) == 4"},
+            {"netheriteh": "query.armor_texture_slot(0) == 5"}
+          ],
+          "on_entry": [ "/scoreboard players set @s detect_helmet 3" ]
+        },
+        "diamondh": {
+          "transitions": [
+            {"noh": "!(query.has_armor_slot(0))"},
+            {"leatherh": "query.armor_texture_slot(0) == 0"},
+            {"chainh": "query.armor_texture_slot(0) == 1"},
+            {"ironh": "query.armor_texture_slot(0) == 2"},
+            {"goldh": "query.armor_texture_slot(0) == 4"},
+            {"netheriteh": "query.armor_texture_slot(0) == 5"}
+          ],
+          "on_entry": [ "/scoreboard players set @s detect_helmet 4" ]
+        },
+        "goldh": {
+          "transitions": [
+            {"noh": "!(query.has_armor_slot(0))"},
+            {"leatherh": "query.armor_texture_slot(0) == 0"},
+            {"chainh": "query.armor_texture_slot(0) == 1"},
+            {"ironh": "query.armor_texture_slot(0) == 2"},
+            {"diamondh": "query.armor_texture_slot(0) == 3"},
+            {"netheriteh": "query.armor_texture_slot(0) == 5"}
+          ],
+          "on_entry": [ "/scoreboard players set @s detect_helmet 5" ]
+        },
+        "netheriteh": {
+          "transitions": [
+            {"noh": "!(query.has_armor_slot(0))"},
+            {"leatherh": "query.armor_texture_slot(0) == 0"},
+            {"chainh": "query.armor_texture_slot(0) == 1"},
+            {"ironh": "query.armor_texture_slot(0) == 2"},
+            {"diamondh": "query.armor_texture_slot(0) == 3"},
+            {"goldh": "query.armor_texture_slot(0) == 4"}
+          ],
+          "on_entry": [ "/scoreboard players set @s detect_helmet 6" ]
+        }
+      }
+    },
+    "controller.animation.rain": {
+      "states": {
+        "default": {
+          "transitions": [ {"rain": "query.is_in_water_or_rain && !query.is_in_water"} ],
+          "on_entry": [ "/scoreboard players set @s detect_rain 0" ]
+        },
+        "rain": {
+          "transitions": [ {"default": "!query.is_in_water_or_rain"} ],
+          "on_entry": [ "/scoreboard players set @s detect_rain 1" ]
+        }
+      }
+    },
+    "controller.animation.charge": {
+      "states": {
+        "default": {
+          "transitions": [ {"charge": "query.is_charging"} ],
+          "on_entry": [ "/scoreboard players set @s detect_charge 0" ]
+        },
+        "charge": {
+          "transitions": [ {"default": "!query.is_charging"} ],
+          "on_entry": [ "/scoreboard players set @s detect_charge 1" ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "ds:allrange_out2",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/sparks"
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 6
+			},
+			"minecraft:emitter_lifetime_once": {},
+			"minecraft:emitter_shape_point": {},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": 1
+			},
+			"minecraft:particle_initial_spin": {
+				"rotation": "math.random(180,-180) "
+			},
+			"minecraft:particle_initial_speed": 0.1,
+			"minecraft:particle_motion_dynamic": {},
+			"minecraft:particle_appearance_billboard": {
+				"size": ["0 + (variable.particle_age * 100)", "0.2 - (variable.particle_age * 0.4)"],
+				"facing_camera_mode": "direction_z",
+				"uv": {
+					"texture_width": 4,
+					"texture_height": 4,
+					"uv": [0, 0],
+					"uv_size": [4, 4]
+				}
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"interpolant": "variable.particle_age",
+					"gradient": {
+						"0.0": "#FF000000",
+						"1.0": "#00000000"
+					}
+				}
+			}
+		}
+	}
+}
